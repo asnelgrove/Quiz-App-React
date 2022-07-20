@@ -1,38 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  min-width: 50vw;
+  min-height: 33vh;
+  margin: auto;
+  margin-top: 20vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: indigo;
+  color: #fff;
+  border-radius: 0.33rem;
+  box-shadow: 10px 10px 5px #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question-section {
+  padding: 0.5rem;
+}
+
+.question-text {
+  padding: 1rem;
+}
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+span {
+  font-size: larger;
+}
+
+button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 0.75rem;
+}
+
+button:hover {
+  background-color: rgb(112, 253, 255);
 }
