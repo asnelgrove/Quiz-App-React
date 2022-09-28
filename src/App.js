@@ -127,7 +127,7 @@ function App() {
       <div className="card">
         <div className="score-section">
           You scored {score} out of {questions.length}<br></br>
-          {score===10 ? (<p>Perfect Score! &#x1F3C6;</p>) : <></>}
+          {score===10 ? (<p><span>&#x1F38A;</span> Perfect Score! <span>&#x1F3C6;</span><span>&#x1F38A;</span></p>) : <></>}
           <button onClick={handleReset}>Try Quiz Again</button>
         </div>
       </div>
