@@ -104,8 +104,6 @@ function App() {
 
   let currentQuestion = questions[qIndex];
 
-  // const initialState = [];
-
   const [playerResults, setPlayerResults] = useState([]);
 
   const addPlayerResults = obj => {
