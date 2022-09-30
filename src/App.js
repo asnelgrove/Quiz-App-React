@@ -96,19 +96,41 @@ function App() {
     
   ];
 
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [qIndex, setQIndex] = useState(0);
 
   const [showScore, setShowScore] = useState(false);
 
   const [score, setScore] = useState(0);
+
+  let currentQuestion = questions[qIndex];
+
+  // const initialState = [];
+
+  const [playerResults, setPlayerResults] = useState([]);
+
+  const addPlayerResults = obj => {
+    setPlayerResults(current => [...current, obj])
+  };
   
-  const handleAnswerButtonClick = (isCorrect) => {
-    if (isCorrect===true) {
-      setScore(score + 1)
+  const handleAnswerButtonClick = (currentQuestion, answerOption) => {
+    if (answerOption.isCorrect===true) {
+      setScore(score + 1);
+      addPlayerResults(
+      {text: currentQuestion.questionText, 
+      yourAnswer: answerOption.answerText,
+      emoji: '\u{2705}'},
+      )
+    } else {
+      addPlayerResults(
+        {text: currentQuestion.questionText, 
+        yourAnswer: answerOption.answerText,
+        emoji: '\u{274C}'},
+      )
     }
-    const nextQuestion = currentQuestion + 1;
+    console.log(playerResults);
+    const nextQuestion = qIndex + 1;
     if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
+      setQIndex(nextQuestion);
     } else {
       setShowScore(true)
     }
@@ -118,7 +140,8 @@ function App() {
   const handleReset = () => {
     setShowScore(false);
     setScore(0);
-    setCurrentQuestion(0)
+    setQIndex(0);
+    playerResults.length = 0;
   };
 
   return (
@@ -126,8 +149,15 @@ function App() {
       {showScore ? (
       <div className="card">
         <div className="score-section">
-          You scored {score} out of {questions.length}<br></br>
+          <p>You scored {score} out of {questions.length}</p><br></br>
           {score===10 ? (<p><span>&#x1F38A;</span> Perfect Score! <span>&#x1F3C6;</span><span>&#x1F38A;</span></p>) : <></>}
+          <h1>Your Results:</h1> 
+          {playerResults.map((result) =>
+          <div className="result">
+          <p>{result.text}</p>
+          <p>{result.yourAnswer} <span>{result.emoji}</span></p>
+          </div>
+          )}
           <button onClick={handleReset}>Try Quiz Again</button>
         </div>
       </div>
@@ -136,14 +166,14 @@ function App() {
       <div className="card">
         <div className="question-section">
           <div className="question-count">
-            <span>Question {currentQuestion + 1}</span> of {questions.length}
+            <span>Question {qIndex + 1}</span> of {questions.length}
           </div>
-          <div className="question-text">{questions[currentQuestion].questionText}</div>
+          <div className="question-text">{currentQuestion.questionText}</div>
         </div> 
 
         <div className="answer-section">
-          {questions[currentQuestion].answerOptions.map((answerOption) => 
-          <button onClick={()=>handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>)}
+          {currentQuestion.answerOptions.map((answerOption) => 
+          <button onClick={()=>handleAnswerButtonClick(currentQuestion, answerOption)}>{answerOption.answerText}</button>)}
         </div>
       </div>
       </>
