@@ -5,26 +5,42 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App {
+.bground {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: auto;
-  background-color: #ccc;
+  min-height: 100vh;
+  background-color: #251749;
+  background-image: url('quizbg.svg');
+  background-size: contain;
+  background-position: center;
+}
+
+.quiz-title {
+  background-color: #251749;
+  border: solid 2px #263159;
+  border-radius: 5px;
+  color: #fffbeb;
+  padding: 1rem;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .card {
-  min-width: 50vw;
+  width: min(40em, 80%);
   height: auto;
   margin: auto;
   margin-block: min(20vh, 4rem);
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  background-color: indigo;
-  color: #fff;
+  background-color: #fffbeb;
+  color: #263159;
   border-radius: 0.33rem;
-  box-shadow: 10px 10px 5px #000;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
 }
 
 .question-section {
@@ -33,7 +49,9 @@
 
 .question-text {
   padding: 1rem;
+  max-width: 65ch;
 }
+
 .answer-section {
   display: flex;
   flex-direction: column;
@@ -58,11 +76,18 @@ button {
   padding: 0.5rem;
   margin: 0.5rem;
   cursor: pointer;
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: #263159;
+  color: #fff;
+  border: 2px solid #fff;
   border-radius: 0.75rem;
 }
 
 button:hover {
-  background-color: rgb(112, 253, 255);
+  background-color: #495579;
 }
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+  }
+} 
