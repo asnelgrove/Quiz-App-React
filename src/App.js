@@ -6,11 +6,12 @@ import Quiz from "./Quiz";
 const App = () => {
     const [questionSet, setQuestionSet] = useState([]);
     const [startQuiz, setStartquiz] = useState(false);
+    const [shuffle, setShuffle] = useState(false)
 
     useEffect(() => {
         setQuestionSet(QuestionDB.sort(() => 0.5 - Math.random()).slice(0, 10));
         console.log(questionSet);
-    }, [])
+    }, [shuffle])
 
   return (
     <div className="bground">
@@ -24,7 +25,7 @@ const App = () => {
           <button disabled={questionSet ? false : true} onClick={() => setStartquiz(true)}>Start Quiz</button>
         </div>
         
-        {startQuiz && <Quiz questionSet={questionSet}/>}
+        {startQuiz && <Quiz questionSet={questionSet} shuffle={shuffle} setShuffle={setShuffle} setStartquiz={setStartquiz}/>}
     </div>
   )
 }
