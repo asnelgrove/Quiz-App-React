@@ -4,6 +4,9 @@ import './App.css'
 const Quiz = (props) => {
 
     let questions = props.questionSet;
+    let shuffle = props.shuffle;
+    let setShuffle = props.setShuffle;
+    let setStartquiz = props.setStartquiz;
     
      // variables needed for the game
 
@@ -57,6 +60,17 @@ const Quiz = (props) => {
        setQIndex(0);
        playerResults.length = 0;
      };
+
+     // to try a new quiz (different question set)
+   
+     const handleShuffle = () => {
+       setShowScore(false);
+       setScore(0);
+       setQIndex(0);
+       playerResults.length = 0;
+       setStartquiz(false);
+       setShuffle(!shuffle);
+     };
      
   return (
     <div>
@@ -74,6 +88,7 @@ const Quiz = (props) => {
             </div>
             )}
             <button onClick={handleReset}>Try Quiz Again</button>
+            <button onClick={handleShuffle}>New Quiz</button>
           </div>
         </div>
         ) : questions ? (
