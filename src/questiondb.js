@@ -246,8 +246,146 @@ const QuestionDB = [
           {answerText: "percussion", isCorrect: false}
         ]
       },
-    ];
 
-    // let questions = QuestionDB.sort(() => 0.5 - Math.random()).slice(0, 10);
+      {
+        questionText: "What twentieth-century artist made paintings of soup cans and prints of Marilyn Monroe?",
+        answerOptions: [
+          {answerText: "Picasso", isCorrect: false},
+          {answerText: "Lichtenstein", isCorrect: false},
+          {answerText: "Warhol", isCorrect: true},
+          {answerText: "Basquiat", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "Which of these South American countries does NOT border the Atlantic ocean?",
+        answerOptions: [
+          {answerText: "Brazil", isCorrect: false},
+          {answerText: "Paraguay", isCorrect: true},
+          {answerText: "Uruguay", isCorrect: false},
+          {answerText: "Argentina", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "Which play by William Shakespeare contains the line 'We are such stuff as dreams are made on'?",
+        answerOptions: [
+          {answerText: "Hamlet", isCorrect: false},
+          {answerText: "Twelfth Night", isCorrect: false},
+          {answerText: "A Midsummer Night's Dream", isCorrect: false},
+          {answerText: "The Tempest", isCorrect: true}
+        ]
+      },
+
+      {
+        questionText: "After his defeat at Waterloo, Napoleon Bonaparte spent the rest of his life imprisoned on what remote island?",
+        answerOptions: [
+          {answerText: "East Falkland", isCorrect: false},
+          {answerText: "Ascension", isCorrect: false},
+          {answerText: "St. Helena", isCorrect: true},
+          {answerText: "Tristan da Cunha", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "Which Indian city is home to the Taj Mahal?",
+        answerOptions: [
+          {answerText: "Udaipur", isCorrect: false},
+          {answerText: "Agra", isCorrect: true},
+          {answerText: "Jaipur", isCorrect: false},
+          {answerText: "Varanasi", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "In what year was the first compact disc (CD) manufactured?",
+        answerOptions: [
+          {answerText: "1982", isCorrect: true},
+          {answerText: "1984", isCorrect: false},
+          {answerText: "1986", isCorrect: false},
+          {answerText: "1988", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "Which nineteenth-century painter cut off part of his own ear during a manic-depressive episode?",
+        answerOptions: [
+          {answerText: "Munch", isCorrect: false},
+          {answerText: "Toulouse-Lautrec", isCorrect: false},
+          {answerText: "Gauguin", isCorrect: false},
+          {answerText: "Van Gogh", isCorrect: true}
+        ]
+      },
+
+      {
+        questionText: "What is a twelve-sided polygon called?",
+        answerOptions: [
+          {answerText: "decagon", isCorrect: false},
+          {answerText: "dodecagon", isCorrect: true},
+          {answerText: "dozagon", isCorrect: false},
+          {answerText: "icosagon", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "What was the original name of the title character in the Pac-Man computer game?",
+        answerOptions: [
+          {answerText: "Puck-Man", isCorrect: true},
+          {answerText: "Punk-Man", isCorrect: false},
+          {answerText: "Peck-Man", isCorrect: false},
+          {answerText: "Packer-Man", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "What is the square root of 81?",
+        answerOptions: [
+          {answerText: "8", isCorrect: false},
+          {answerText: "9", isCorrect: true},
+          {answerText: "18", isCorrect: false},
+          {answerText: "162", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "What kind of triangle has exactly two sides of equal length?",
+        answerOptions: [
+          {answerText: "Isoceles", isCorrect: true},
+          {answerText: "Scalene", isCorrect: false},
+          {answerText: "Right", isCorrect: false},
+          {answerText: "Bermuda", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "Which Italian artist painted 'the Birth of Venus' in the 1480's?",
+        answerOptions: [
+          {answerText: "Raphael", isCorrect: false},
+          {answerText: "Botticelli", isCorrect: true},
+          {answerText: "Davinci", isCorrect: false},
+          {answerText: "Titian", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "Who wrote the novel 'Treasure Island'?",
+        answerOptions: [
+          {answerText: "Daniel Defoe", isCorrect: false},
+          {answerText: "Robert Louis Stevenson", isCorrect: true},
+          {answerText: "Rudyard Kipling", isCorrect: false},
+          {answerText: "Mary Shelley", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "In 2001 in the Bamyan Valley of Afghanistan, the Taliban destroyed two ancient colossal statues of what figure?",
+        answerOptions: [
+          {answerText: "Jesus", isCorrect: false},
+          {answerText: "the Buddha", isCorrect: true},
+          {answerText: "Confucius", isCorrect: false},
+          {answerText: "Alexander the Great", isCorrect: false}
+        ]
+      },
+    ];
 
     export default QuestionDB;
