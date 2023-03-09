@@ -342,8 +342,8 @@ const QuestionDB = [
         answerOptions: [
           {answerText: "8", isCorrect: false},
           {answerText: "9", isCorrect: true},
-          {answerText: "18", isCorrect: false},
-          {answerText: "162", isCorrect: false}
+          {answerText: "162", isCorrect: false},
+          {answerText: "6561", isCorrect: false}
         ]
       },
 
@@ -358,7 +358,7 @@ const QuestionDB = [
       },
 
       {
-        questionText: "Which Italian artist painted 'the Birth of Venus' in the 1480's?",
+        questionText: "Which Italian artist painted 'the Birth of Venus' in the 1480s?",
         answerOptions: [
           {answerText: "Raphael", isCorrect: false},
           {answerText: "Botticelli", isCorrect: true},
@@ -384,6 +384,106 @@ const QuestionDB = [
           {answerText: "the Buddha", isCorrect: true},
           {answerText: "Confucius", isCorrect: false},
           {answerText: "Alexander the Great", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "What is the name of the fictional Belgian detective created by Agatha Christie?",
+        answerOptions: [
+          {answerText: "Jules Maigret", isCorrect: false},
+          {answerText: "Hercule Poirot", isCorrect: true},
+          {answerText: "Detective Dupont", isCorrect: false},
+          {answerText: "Inspector Clouseau", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "Cyan is a variety of what color?",
+        answerOptions: [
+          {answerText: "blue", isCorrect: false},
+          {answerText: "red", isCorrect: true},
+          {answerText: "pink", isCorrect: false},
+          {answerText: "purple", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "In 2023, government and academic institutions in Canada, the USA, and the European Union banned what social media app on employees' devices?",
+        answerOptions: [
+          {answerText: "TikTok", isCorrect: true},
+          {answerText: "Instagram", isCorrect: false},
+          {answerText: "Twitter", isCorrect: false},
+          {answerText: "Facebook", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "What is the capital of Australia?",
+        answerOptions: [
+          {answerText: "Melbourne", isCorrect: false},
+          {answerText: "Sydney", isCorrect: false},
+          {answerText: "Adelaide", isCorrect: false},
+          {answerText: "Canberra", isCorrect: true}
+        ]
+      },
+
+      {
+        questionText: "Which of these novels is NOT by Ernest Hemingway?",
+        answerOptions: [
+          {answerText: "The Sun Also Rises", isCorrect: false},
+          {answerText: "Of Mice and Men", isCorrect: true},
+          {answerText: "To Have and Have Not", isCorrect: false},
+          {answerText: "The Old Man and the Sea", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "In what year did the Barbie doll make its first appearance at a toy fair?",
+        answerOptions: [
+          {answerText: "1959", isCorrect: true},
+          {answerText: "1963", isCorrect: false},
+          {answerText: "1967", isCorrect: false},
+          {answerText: "1969", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "What is the largest mammal on Earth?",
+        answerOptions: [
+          {answerText: "African elephant", isCorrect: false},
+          {answerText: "blue whale", isCorrect: true},
+          {answerText: "anaconda", isCorrect: false},
+          {answerText: "giraffe", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "What is the capital of Colombia?",
+        answerOptions: [
+          {answerText: "Cartagena", isCorrect: false},
+          {answerText: "Medellin", isCorrect: false},
+          {answerText: "Barranquilla", isCorrect: false},
+          {answerText: "Bogota", isCorrect: true}
+        ]
+      },
+
+      {
+        questionText: "Which of these elements of the periodic table is NOT a noble gas?",
+        answerOptions: [
+          {answerText: "Argon", isCorrect: false},
+          {answerText: "Neon", isCorrect: false},
+          {answerText: "Carbon", isCorrect: true},
+          {answerText: "Krypton", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "Who wrote the novel 'Frankenstein'?",
+        answerOptions: [
+          {answerText: "Victor Hugo", isCorrect: false},
+          {answerText: "Bram Stoker", isCorrect: false},
+          {answerText: "Mary Shelley", isCorrect: true},
+          {answerText: "Percy Bysshe Shelley", isCorrect: false}
         ]
       },
     ];
