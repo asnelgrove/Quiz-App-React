@@ -400,8 +400,8 @@ const QuestionDB = [
       {
         questionText: "Cyan is a variety of what color?",
         answerOptions: [
-          {answerText: "blue", isCorrect: false},
-          {answerText: "red", isCorrect: true},
+          {answerText: "blue", isCorrect: true},
+          {answerText: "red", isCorrect: false},
           {answerText: "pink", isCorrect: false},
           {answerText: "purple", isCorrect: false}
         ]
