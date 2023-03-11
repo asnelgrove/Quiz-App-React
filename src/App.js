@@ -21,7 +21,8 @@ const App = () => {
         
         <div className="card" style={{display: startQuiz ? "none" : "block"}}>
           <h2>Welcome to Quiz App!</h2>
-          <p>click here to start the quiz</p>
+          <p>Test your knowledge of general trivia. How many questions can you answer? They're not easy!</p>
+          <p>Click the button to start the quiz</p>
           <button disabled={questionSet ? false : true} onClick={() => setStartquiz(true)}>Start Quiz</button>
         </div>
         

@@ -278,7 +278,7 @@ const QuestionDB = [
       },
 
       {
-        questionText: "After his defeat at Waterloo, Napoleon Bonaparte spent the rest of his life imprisoned on what remote island?",
+        questionText: "After he was defeated by British and Prussian forces in 1815, Napoleon Bonaparte spent the rest of his life imprisoned on what remote island?",
         answerOptions: [
           {answerText: "East Falkland", isCorrect: false},
           {answerText: "Ascension", isCorrect: false},
@@ -308,7 +308,7 @@ const QuestionDB = [
       },
 
       {
-        questionText: "Which nineteenth-century painter cut off part of his own ear during a manic-depressive episode?",
+        questionText: "Which nineteenth-century painter cut off part of his own ear during a mental breakdown?",
         answerOptions: [
           {answerText: "Munch", isCorrect: false},
           {answerText: "Toulouse-Lautrec", isCorrect: false},
@@ -362,7 +362,7 @@ const QuestionDB = [
         answerOptions: [
           {answerText: "Raphael", isCorrect: false},
           {answerText: "Botticelli", isCorrect: true},
-          {answerText: "Davinci", isCorrect: false},
+          {answerText: "Da Vinci", isCorrect: false},
           {answerText: "Titian", isCorrect: false}
         ]
       },
@@ -388,7 +388,7 @@ const QuestionDB = [
       },
 
       {
-        questionText: "What is the name of the fictional Belgian detective created by Agatha Christie?",
+        questionText: "What is the name of the fictional Belgian detective created by mystery writer Agatha Christie?",
         answerOptions: [
           {answerText: "Jules Maigret", isCorrect: false},
           {answerText: "Hercule Poirot", isCorrect: true},
@@ -484,6 +484,16 @@ const QuestionDB = [
           {answerText: "Bram Stoker", isCorrect: false},
           {answerText: "Mary Shelley", isCorrect: true},
           {answerText: "Percy Bysshe Shelley", isCorrect: false}
+        ]
+      },
+
+      {
+        questionText: "The phenomenon whereby two or more witnesses describe the same event in significantly different, even contradictory, ways is called what?",
+        answerOptions: [
+          {answerText: "The Butterfly Effect", isCorrect: false},
+          {answerText: "The Dunning-Kruger Effect", isCorrect: false},
+          {answerText: "The Bystander Effect", isCorrect: false},
+          {answerText: "The Rashomon Effect", isCorrect: true}
         ]
       },
     ];
